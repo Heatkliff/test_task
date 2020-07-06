@@ -1,0 +1,125 @@
+.header {
+  position: relative;
+  background-color: #FFFFFF;
+  padding-top: 39px;
+  padding-left: 30px;
+
+  .title-block {
+    display: flex;
+
+    .logo-icon {
+      background-color: #FFC200;
+      border-radius: 8px;
+      width: 40px;
+      height: 40px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .title-text {
+      font-family: 'Helvetica', serif;
+      margin-left: 15px;
+      font-size: 32px;
+      color: #131313;
+    }
+
+    .circle-additional {
+      margin-left: 11px;
+      margin-top: 6px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #EAEAEA;
+
+      .title-additional {
+        .dots {
+          background: #9B9B9B;
+
+          &:after {
+            background: #9B9B9B;
+          }
+
+          &:before {
+            background: #9B9B9B;
+          }
+        }
+      }
+    }
+  }
+
+  .links-block {
+    font-family: 'Helvetica', serif;
+    display: flex;
+    flex-direction: row;
+    padding-top: 24px;
+
+    .link {
+      opacity: 0.7;
+      font-size: 16px;
+      color: #131313;
+      margin-right: 29px;
+      padding-bottom: 15px;
+
+      &.active {
+        opacity: 1;
+        border-bottom: 1px solid #FFC200;
+      }
+    }
+  }
+
+  .community-block {
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top: 46px;
+
+    @media (max-width: 970px) {
+      top: 15px;
+    }
+
+    @media (max-width: 500px) {
+      top: 6px;
+    }
+
+
+
+    .friend-block {
+      display: flex;
+
+      .friend-subunit {
+        margin: 0 2.5px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    .share-button {
+      margin: 0 12.5px;
+      padding: 5px 14.5px 5px 14.5px;
+      border-radius: 15px;
+      background: #EAEAEA;
+      font-family: 'Helvetica', serif;
+      font-size: 14px;
+      color: #131313;
+    }
+
+    .chat-button {
+      margin: 0 12.5px;
+      padding: 5px 14.5px 5px 14.5px;
+      border-radius: 15px;
+      background: #FFF8DD;
+      font-family: 'Helvetica', serif;
+      font-size: 14px;
+      color: #FFC200;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "common/global";
+@import "blocks/sidenav";
+@import "blocks/container";
+
+#page{
+  background: #eeebe5;
+  display: flex;
+  min-height: 100vh;
+}

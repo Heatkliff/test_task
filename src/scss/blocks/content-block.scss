@@ -1,0 +1,143 @@
+.content-block {
+  padding: 30px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  max-width: 670px;
+  width: calc(95% - 60px);
+  margin: 30px auto;
+
+  .date-block {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    opacity: 0.5;
+    font-family: 'Helvetica', serif;
+    font-size: 14px;
+    color: #131313;
+    text-transform: uppercase;
+  }
+
+  .posts-list {
+    display: flex;
+    flex-direction: column;
+
+    .post-block {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      //width: 100%;
+
+      .icon-post {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:after {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-weight: bolder;
+          font-size: 20px;
+        }
+      }
+
+      .post-content {
+        margin-top: 4px;
+        margin-left: 20px;
+        font-family: 'Helvetica', serif;
+        font-size: 16px;
+        color: #131313;
+        line-height: 20px;
+        max-width: 470px;
+      }
+
+      .post-date {
+        opacity: 0.7;
+        font-family: 'Helvetica', serif;
+        font-size: 14px;
+        color: #131313;
+        text-align: right;
+        line-height: 20px;
+        position: absolute;
+        right: 0;
+      }
+
+      .comment-block {
+        width: 100%;
+
+        .comment-subunit {
+          background: #F7F6F3;
+          border-radius: 10px;
+          font-family: 'Helvetica', serif;
+          font-size: 15px;
+          color: #131313;
+          padding: 20px 30px;
+          margin: 20px auto 0 auto;
+          max-width: 491px;
+          width: calc(98% - 60px);
+        }
+      }
+
+      .files-block {
+        width: 100%;
+
+        .files-subunit {
+          max-width: 551px;
+          width: 98%;
+          margin: 20px auto 0 auto;
+          display: flex;
+
+          .file-img {
+            border-radius: 8px;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+
+            img {
+              border-radius: 8px;
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      &.marked {
+        .icon-post {
+          background-color: #CEF9C6;
+
+          &:after {
+            content: "\2713";
+          }
+        }
+      }
+
+      &.comment {
+        .icon-post {
+          background-color: #FFF8DD;
+
+          &:after {
+            content: "";
+          }
+
+        }
+      }
+
+      &.files {
+        .icon-post {
+          background-color: #E3EFFF;
+
+          &:after {
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}
